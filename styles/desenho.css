@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -12,7 +11,21 @@
     z-index: 101;
 }
 
-.desenho img {
+.desenho__doguinhos {
+    width: 28vh;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;         /* Alinha à esquerda */
+    right: auto;     /* Remove alinhamento à direita */
+    pointer-events: none;
+}
+
+.desenho__imagem {
     width: 17.5vh;
     height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
 }
