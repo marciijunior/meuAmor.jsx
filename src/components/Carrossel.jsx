@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
 
 export default function Carrossel() {
   return (
@@ -18,20 +17,14 @@ export default function Carrossel() {
         Te amo para sempre!
       </motion.h2>
       <Swiper
-        modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+        modules={[Navigation, Pagination, Autoplay]}
         effect="slide"
         grabCursor
         centeredSlides
-        slidesPerView="7"
-        coverflowEffect={{
-          rotate: 30,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+        slidesPerView={7}
+        speed={4000}
         autoplay={{
-          delay: 5000,
+          delay: 1,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
