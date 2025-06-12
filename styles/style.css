@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
 @import url("carrossel.css");
 @import url("contatos.css");
 @import url("rodape.css");
@@ -30,6 +31,7 @@
     --fonte2: "Dancing Script", cursive;
     --fonte3: "Sofia", cursive;
     --fonte4: "Fleur De Leah", cursive;
+    --fonte5: "Miss Fajardose", cursive;
 }
 
 body {
