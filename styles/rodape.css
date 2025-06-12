@@ -1,0 +1,42 @@
+:root {
+    --cor-branco: #ffffff;
+    --cor-fundo: #d4d4d4;
+    --cor-preta: #000000;
+    --cor-bege: #fffae9;
+    --cor-paleta-1: #d8ccb2;
+    --cor-paleta-2: #ccbd9e;
+    --cor-paleta-3: #495168;
+    --cor-paleta-4: #1a4141;
+    --cor-paleta-5: #82a374;
+    --degrade1: radial-gradient(circle at 70% 50%, #ccbd9e, #fffae9);
+    --degrade2: radial-gradient(circle at 70% 50%, #d4d4d4, #fffae9);
+    --degrade3: radial-gradient(circle at 70% 50%, #ffffff, #e02664);
+    --degrade4: radial-gradient(circle at 100% 35%, #bdf1bd, #fff2c5);
+    --fonte1: 'Montserrat', sans-serif;
+    --fonte2: "Dancing Script", cursive;
+    --fonte3: "Sofia", cursive;
+}
+
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background: var(--degrade1);
+    font-size: 1.3vh;
+    text-align: center;
+    color: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.rodape__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vh;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.2vh;
+}

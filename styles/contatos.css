@@ -1,0 +1,24 @@
+.contato {
+    margin: 2vh 0 0 0;
+    background: var(--cor-bege);
+    padding: 1vh;
+    box-shadow: 0 6vh 25vh rgba(0, 0, 0, 0.5);
+}
+
+.contato__titulo, .contato__texto {
+    font-size: 0.75em;
+    background: var(--cor-preta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1vh 0;
+}
+

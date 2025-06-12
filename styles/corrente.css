@@ -1,0 +1,18 @@
+.corrente-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vh;
+}
+
+.corrente {
+    width: 1vh;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    .corrente {
+        width: 0.7vh;
+    }
+}
