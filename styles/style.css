@@ -12,21 +12,20 @@
 @import url("desenho.css");
 
 :root {
-    --cor-branco: #ffffff;
-    --cor-fundo: #d4d4d4;
-    --cor-preta: #000000;
-    --cor-bege: #fffae9;
+    --cor-branco:   #ffffff;
+    --cor-fundo:    #d4d4d4;
+    --cor-preta:    #000000;
+    --cor-bege:     #fffae9;
     --cor-paleta-1: #d8ccb2;
     --cor-paleta-2: #ccbd9e;
     --cor-paleta-3: #495168;
     --cor-paleta-4: #1a4141;
     --cor-paleta-5: #82a374;
-    /* --degrade1: radial-gradient(circle at 70% 50%, #e9e9e9, rgb(255, 181, 181)); */
     --degrade1: radial-gradient(circle at 70% 50%, #ccbd9e, #fffae9);
-    --degrade2: radial-gradient(circle at 70% 50%, #d4d4d4, #fffae9);
+    /* --degrade1: radial-gradient(circle at 70% 50%, #d4d4d4, #ffffff); */
+    --degrade2: radial-gradient(circle at 70% 50%, #d4d4d4, #ffffff);
+    /* --degrade2: radial-gradient(circle at 70% 50%, #d4d4d4, #fffae9); */
     --degrade3: radial-gradient(circle at 70% 50%, #3f3f3f, rgb(43, 43, 43));
-    /* --degrade3: radial-gradient(circle at 70% 50%, #ffffff, #e026648f); */
-    --degrade4: radial-gradient(circle at 100% 35%, #bdf1bd, #fff2c5);
     --fonte1: 'Montserrat', sans-serif;
     --fonte2: "Dancing Script", cursive;
     --fonte3: "Sofia", cursive;

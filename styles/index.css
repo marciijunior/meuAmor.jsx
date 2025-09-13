@@ -1,4 +1,22 @@
-body {
+/* Importa as fontes que escolhemos do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap');
+
+/* Um reset básico para garantir consistência entre navegadores */
+* {
   margin: 0;
-  font-family: var(--fonte1);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo principal da página */
+body {
+  background-color: #f7f3f2; /* Fundo creme suave */
+  color: #4a4a4a; /* Cor de texto principal (cinza escuro) */
+  font-family: 'Lora', serif; /* Fonte padrão para textos */
+  
+  /* Centraliza o conteúdo principal na tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }

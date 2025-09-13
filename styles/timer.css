@@ -1,0 +1,49 @@
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espaço entre os cartões */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.timer-box {
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(140, 74, 95, 0.1);
+  min-width: 90px; /* Largura mínima para cada caixa */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timer-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 22px rgba(140, 74, 95, 0.15);
+}
+
+.timer-number {
+  font-family: 'Lora', serif;
+  font-size: 3rem; /* Números grandes */
+  font-weight: 700;
+  color: #8c4a5f; /* Cor de destaque (marsala) */
+  display: block;
+}
+
+.timer-label {
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  color: #d6a6a4; /* Rosa queimado */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  display: block;
+}

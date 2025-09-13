@@ -16,8 +16,8 @@
     height: auto;
     position: absolute;
     bottom: 0;
-    left: 0;         /* Alinha à esquerda */
-    right: auto;     /* Remove alinhamento à direita */
+    left: 0;
+    right: auto;
     pointer-events: none;
 }
 

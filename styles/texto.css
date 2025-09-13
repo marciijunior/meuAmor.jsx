@@ -4,7 +4,8 @@
     font-family: var(--fonte3);
     font-size: 1.8vh;
     color: var(--cor-preta);
-    background: var(--cor-bege);
+    background: var(--degrade2);
+    border: var(--degrade1) 0.1vh solid;
     margin: 1vh 2vh;
     padding: 2vh;
     border-radius: 1.1vh;
