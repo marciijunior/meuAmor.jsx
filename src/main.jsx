@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-// import "./index.css"; // Remova ou comente esta linha
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './components/App.jsx';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// CORREÇÃO: Importa o style.css, que é o seu ficheiro principal de estilos
+import './styles/style.css'; 
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

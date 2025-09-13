@@ -1,0 +1,114 @@
+.carrossel-wrapper-novo {
+  width: 100%;
+  max-width: 1000px; /* Um pouco mais largo para dar impacto */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.carrossel-wrapper-novo h2 {
+  font-family: var(--fonte-especial);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-destaque);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.meuSwiper-novo {
+  width: 100%;
+  height: 500px;
+  background: #000;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(45, 36, 36, 0.15);
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(0.7); /* Efeito de fundo desfocado */
+}
+
+.meuSwiper-novo .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-imagem {
+  display: block;
+  width: 60%; /* A imagem ocupa uma parte do slide */
+  height: auto;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.swiper-slide:hover .slide-imagem {
+  transform: scale(1.05);
+}
+
+.slide-texto {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: var(--cor-branco);
+  text-align: left;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.slide-texto .titulo {
+  font-family: var(--fonte-corpo);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.slide-texto .subtitulo {
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Estilo da navegação (setas) e paginação (bolinhas) */
+.meuSwiper-novo .swiper-button-next,
+.meuSwiper-novo .swiper-button-prev {
+  color: var(--cor-branco);
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.meuSwiper-novo:hover .swiper-button-next,
+.meuSwiper-novo:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+.meuSwiper-novo .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.meuSwiper-novo .swiper-pagination-bullet-active {
+  background-color: var(--cor-branco);
+}
+
+@media (max-width: 768px) {
+  .meuSwiper-novo {
+    height: 400px;
+  }
+  .slide-imagem {
+    width: 85%;
+  }
+  .slide-texto {
+    bottom: 8%;
+  }
+  .slide-texto .titulo {
+    font-size: 1.8rem;
+  }
+  .slide-texto .subtitulo {
+    font-size: 1rem;
+  }
+}

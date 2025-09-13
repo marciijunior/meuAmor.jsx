@@ -1,0 +1,36 @@
+.texto-wrapper {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.texto-wrapper p {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--cor-texto);
+  position: relative;
+  padding: 1rem;
+}
+
+/* Adiciona aspas decorativas */
+.texto-wrapper p::before,
+.texto-wrapper p::after {
+  font-family: var(--fonte-especial);
+  font-size: 4rem;
+  color: var(--cor-destaque);
+  opacity: 0.3;
+  position: absolute;
+}
+
+.texto-wrapper p::before {
+  content: '“';
+  top: -1rem;
+  left: -1rem;
+}
+
+.texto-wrapper p::after {
+  content: '”';
+  bottom: -2rem;
+  right: -1rem;
+}

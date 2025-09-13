@@ -1,0 +1,16 @@
+.rodape {
+  background-color: transparent;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(140, 74, 95, 0.1);
+  box-sizing: border-box;
+}
+
+.rodape p {
+  font-family: var(--fonte-botoes-ui);
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+  margin: 0;
+}

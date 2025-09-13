@@ -1,0 +1,46 @@
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.timer-wrapper h2 {
+  font-family: var(--fonte-especial);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-destaque);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.timer-container {
+  display: flex;
+  gap: clamp(0.5rem, 3vw, 1.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-box {
+  background-color: var(--cor-branco);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(45, 36, 36, 0.05);
+  text-align: center;
+  min-width: 120px;
+  border: 1px solid rgba(188, 138, 132, 0.2);
+}
+
+.timer-number {
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  font-weight: 700;
+  color: var(--cor-texto);
+  display: block;
+}
+
+.timer-label {
+  font-size: 0.9rem;
+  color: var(--cor-subtexto);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

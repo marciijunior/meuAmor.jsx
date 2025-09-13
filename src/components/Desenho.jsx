@@ -1,8 +1,12 @@
-export default function Desenho() {
+import React from 'react';
+
+function Desenho() {
   return (
-    <div className="desenho">
-        <img className="desenho__doguinhos" src="./assets/cachorrinho2.png" alt="Doguinhos"/>
-        <img className="desenho__imagem" src="./assets/desenho.png" alt="Desenho"/>
+    <div className="desenho-wrapper">
+      <img className="desenho-item doguinhos" src="/assets/cachorrinho2.png" alt="Desenho de cachorros" />
+      <img className="desenho-item casal" src="/assets/desenho.png" alt="Desenho de casal" />
     </div>
   );
 }
+
+export default Desenho;

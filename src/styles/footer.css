@@ -1,0 +1,14 @@
+.rodape {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.rodape p {
+  color: var(--cor-subtexto);
+  font-family: var(--fonte-botoes-ui); /* Mudei para uma fonte mais limpa */
+  font-size: 2rem; /* <<< AUMENTADO DE 0.9rem PARA 1rem */
+  padding: 2rem;
+  letter-spacing: 0.5px; /* Adicionei um leve espaçamento para refinar */
+}

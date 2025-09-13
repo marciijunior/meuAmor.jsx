@@ -1,50 +1,74 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
-export default function Carrossel() {
+// Importa todos os estilos necessários para o Swiper
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+
+function Carrossel() {
+  const fotos = [
+    { src: '/assets/foto1.jpg', title: 'O Início', subtitle: 'A nossa primeira aventura' },
+    { src: '/assets/foto2.jpg', title: 'Aquele Dia', subtitle: 'Uma tarde inesquecível' },
+    { src: '/assets/foto3.jpg', title: 'Pura Risada', subtitle: 'Momentos de alegria' },
+    { src: '/assets/foto4.jpg', title: 'Viagem', subtitle: 'A explorar o mundo juntos' },
+    { src: '/assets/foto5.jpg', title: 'Cumplicidade', subtitle: 'O nosso olhar diz tudo' },
+    { src: '/assets/foto6.png', title: 'Para Sempre', subtitle: 'Um novo capítulo' },
+    { src: '/assets/foto7.jpg', title: 'Meu Porto Seguro', subtitle: 'Em teus braços' },
+  ];
+
   return (
-    <section className="carrossel">
-      <motion.h2
-        className="carrossel__titulo"
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Te amo para sempre!
-      </motion.h2>
+    <motion.section 
+      className="carrossel-wrapper-novo"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.7 }}
+    >
+      <h2 data-swiper-parallax="-300">As Nossas Memórias</h2>
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        effect="slide"
-        grabCursor
-        centeredSlides
-        slidesPerView={7}
-        speed={4000}
+        style={{
+          '--swiper-navigation-color': '#8c4a5f', // Cor dos botões de navegação
+          '--swiper-pagination-color': '#8c4a5f', // Cor da paginação
+        }}
+        speed={800}
+        parallax={true}
         autoplay={{
-          delay: 1,
+          delay: 4000,
           disableOnInteraction: false,
         }}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
         pagination={{ clickable: true }}
-        loop
+        navigation={true}
+        loop={true}
+        modules={[Parallax, Pagination, Navigation, Autoplay, EffectFade]}
+        className="meuSwiper-novo"
       >
-        <SwiperSlide><img src="/assets/foto1.jpg" alt="Foto 1" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto2.jpg" alt="Foto 2" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto3.jpg" alt="Foto 3" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto4.jpg" alt="Foto 4" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto5.jpg" alt="Foto 5" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto6.png" alt="Foto 6" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto7.jpg" alt="Foto 7" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto1.jpg" alt="Foto 1" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto2.jpg" alt="Foto 2" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto3.jpg" alt="Foto 3" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto4.jpg" alt="Foto 4" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto5.jpg" alt="Foto 5" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto6.png" alt="Foto 6" /></SwiperSlide>
-        <SwiperSlide><img src="/assets/foto7.jpg" alt="Foto 7" /></SwiperSlide>
+        <div
+          slot="container-start"
+          className="parallax-bg"
+          style={{
+            'backgroundImage': 'url(/assets/foto1.jpg)', // Pode usar uma imagem de fundo genérica aqui
+          }}
+          data-swiper-parallax="-23%"
+        ></div>
+
+        {fotos.map((foto, index) => (
+          <SwiperSlide key={index}>
+            <img src={foto.src} alt={foto.title} className="slide-imagem" />
+            <div className="slide-texto">
+              <div className="titulo" data-swiper-parallax="-300">{foto.title}</div>
+              <div className="subtitulo" data-swiper-parallax="-200">{foto.subtitle}</div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </section>
+    </motion.section>
   );
 }
+
+export default Carrossel;

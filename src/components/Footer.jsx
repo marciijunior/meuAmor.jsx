@@ -1,7 +1,11 @@
-export default function Footer() {
+import React from 'react';
+
+function Footer() {
   return (
     <footer className="rodape">
-      <h2 className="rodape__titulo"></h2>
+      <p>Feito com amor, para o meu amor. ❤️</p>
     </footer>
   );
 }
+
+export default Footer;

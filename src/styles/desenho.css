@@ -1,0 +1,37 @@
+.desenho-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite clicar através dos desenhos */
+  z-index: -1; /* Coloca-os atrás do conteúdo principal */
+  opacity: 0.7;
+}
+
+.desenho-item {
+  position: absolute;
+  bottom: 0;
+  max-width: 250px;
+  transition: transform 0.3s ease-out;
+}
+
+.desenho-item:hover {
+  transform: translateY(-10px);
+}
+
+.doguinhos {
+  left: 20px;
+  width: 20vw;
+}
+
+.casal {
+  right: 20px;
+  width: 12vw;
+}
+
+@media (max-width: 768px) {
+  .desenho-item {
+    max-width: 150px;
+  }
+}
