@@ -1,7 +1,7 @@
 .carrossel-wrapper-novo {
   width: 100%;
   max-width: 900px;
-  padding: 1rem 0; /* Espaçamento vertical */
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -10,12 +10,12 @@
   font-size: clamp(1.8rem, 5vw, 2.2rem);
   color: var(--cor-destaque);
   font-weight: 400;
-  margin-bottom: 2rem; /* Espaçamento inferior padronizado */
+  margin-bottom: 24px;
 }
 
 .meuSwiper-novo {
   width: 100%;
-  height: 450px; /* Altura ajustada */
+  height: 450px;
   background: #000;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(45, 36, 36, 0.15);
@@ -29,7 +29,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(10px) brightness(0.7); /* Efeito de fundo desfocado */
+  filter: blur(10px) brightness(0.7);
 }
 
 .meuSwiper-novo .swiper-slide {
@@ -41,7 +41,7 @@
 
 .slide-imagem {
   display: block;
-  width: 60%; /* A imagem ocupa uma parte do slide */
+  width: 60%;
   height: auto;
   max-height: 90%;
   object-fit: contain;
@@ -74,7 +74,6 @@
   opacity: 0.9;
 }
 
-/* Estilo da navegação (setas) e paginação (bolinhas) */
 .meuSwiper-novo .swiper-button-next,
 .meuSwiper-novo .swiper-button-prev {
   color: var(--cor-branco);
@@ -95,20 +94,36 @@
   background-color: var(--cor-branco);
 }
 
+
+/* ===== EFEITOS E OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
+  .carrossel-wrapper-novo {
+    padding: 0.5rem 0;
+  }
+  .carrossel-wrapper-novo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
   .meuSwiper-novo {
-    height: 400px;
+    height: 350px; /* Carrossel mais baixo */
+    border-radius: 12px;
   }
   .slide-imagem {
-    width: 85%;
+    width: 90%; /* Imagem ocupa quase todo o espaço */
   }
   .slide-texto {
-    bottom: 8%;
+    display: none; /* Esconde o texto para uma interface mais limpa */
   }
-  .slide-texto .titulo {
-    font-size: 1.8rem;
+  
+  /* Esconde as setas de navegação, usando apenas as bolinhas */
+  .meuSwiper-novo .swiper-button-next,
+  .meuSwiper-novo .swiper-button-prev {
+    display: none;
   }
-  .slide-texto .subtitulo {
-    font-size: 1rem;
+
+  /* EFEITO DE TOQUE */
+  .swiper-slide:active {
+    transform: scale(0.97);
+    transition: transform 0.2s ease-out;
   }
-}
+} 

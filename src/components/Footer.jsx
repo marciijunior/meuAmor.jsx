@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="rodape">
-      <p>Feito com amor, para o meu amor. ❤️</p>
+      <p>FEITO COM AMOR, PARA MEU AMOR!</p>
     </footer>
   );
 }

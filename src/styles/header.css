@@ -1,8 +1,9 @@
 .cabecalho {
   width: 100%;
-  padding: 1.5rem 2rem; /* Espaçamento interno padronizado */
-  text-align: center;
+  padding: 1.5rem 2rem;
+  text-align: center; /* <<< GARANTE A CENTRALIZAÇÃO DO CONTEÚDO */
   border-bottom: 1px solid rgba(188, 138, 132, 0.2);
+  box-sizing: border-box; /* Adicionado para consistência */
 }
 
 .cabecalho h1 {
@@ -10,11 +11,25 @@
   font-size: clamp(2.5rem, 8vw, 3.5rem);
   color: var(--cor-destaque);
   font-weight: 400;
+  margin: 0;
 }
 
 .cabecalho p {
   font-size: clamp(0.9rem, 2vw, 1rem);
   color: var(--cor-subtexto);
   font-style: italic;
-  margin-top: 0.5rem; /* Pequena margem superior */
+  margin-top: 0.5rem;
+}
+
+/* ===== OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 1rem;
+  }
+  .cabecalho h1 {
+    font-size: 2.5rem;
+  }
+  .cabecalho p {
+    font-size: 0.9rem;
+  }
 }

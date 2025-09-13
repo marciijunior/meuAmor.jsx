@@ -1,13 +1,15 @@
 .rodape {
   width: 100%;
-  padding: 1rem 2rem; /* Espaçamento interno padronizado */
-  text-align: center;
-  margin-top: auto; /* Garante que ele fique no fundo no modo 100vh */
+  padding: 1.5rem 2rem;
+  text-align: center; /* <<< GARANTE A CENTRALIZAÇÃO DO CONTEÚDO */
+  margin-top: auto;
+  box-sizing: border-box; /* Adicionado para consistência */
 }
 
 .rodape p {
   color: var(--cor-subtexto);
-  font-family: var(--fonte-botoes-ui);
+  font-family: var(--fonte-corpo);
   font-size: 1rem;
   letter-spacing: 0.5px;
+  margin: 0; /* Adicionado para remover margens padrão */
 }

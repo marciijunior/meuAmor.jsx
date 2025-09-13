@@ -25,7 +25,7 @@
   --fonte-botoes-ui: 'Montserrat', sans-serif;
 }
 
-/* 4. ESTILO GLOBAL E FULL-SCREEN */
+/* 4. ESTILO GLOBAL */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -36,30 +36,33 @@ body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   font-family: var(--fonte-corpo);
-  overflow: hidden;
 }
 
+/* 5. ESTRUTURA PRINCIPAL COM CSS GRID */
 .site-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   height: 100vh;
   width: 100vw;
+  overflow: hidden; /* Mantém o controlo geral da página */
 }
 
-/* 5. ORGANIZADOR PRINCIPAL COM ESPAÇAMENTO PADRÃO */
+/* 6. ORGANIZADOR PRINCIPAL */
 main {
-  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden; /* Previne overflow apenas no container principal */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 2rem; /* Espaçamento interno principal */
-  gap: 2.5rem;   /* ESPAÇAMENTO PADRÃO ENTRE OS COMPONENTES PRINCIPAIS */
-  overflow-y: auto;
+  align-items: center; /* <<< Essencial para centrar os contentores na horizontal */
+  padding: 2rem;
+  gap: 2.5rem;
   box-sizing: border-box;
 }
 
-.cabecalho, .rodape {
-  flex-shrink: 0;
+/* ===== OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
 }

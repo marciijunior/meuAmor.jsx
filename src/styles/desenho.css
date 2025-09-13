@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Permite clicar através dos desenhos */
-  z-index: -1; /* Coloca-os atrás do conteúdo principal */
+  pointer-events: none;
+  z-index: -1;
   opacity: 0.7;
 }
 
@@ -30,8 +30,10 @@
   width: 12vw;
 }
 
+/* ===== EFEITOS E OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
-  .desenho-item {
-    max-width: 150px;
+  /* Esconde completamente os desenhos para uma interface mais limpa */
+  .desenho-wrapper {
+    display: none;
   }
 }

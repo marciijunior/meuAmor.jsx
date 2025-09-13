@@ -11,13 +11,13 @@ import 'swiper/css/effect-fade';
 
 function Carrossel() {
   const fotos = [
-    { src: '/assets/foto1.jpg', title: 'O Início', subtitle: 'A nossa primeira aventura' },
-    { src: '/assets/foto2.jpg', title: 'Aquele Dia', subtitle: 'Uma tarde inesquecível' },
-    { src: '/assets/foto3.jpg', title: 'Pura Risada', subtitle: 'Momentos de alegria' },
-    { src: '/assets/foto4.jpg', title: 'Viagem', subtitle: 'A explorar o mundo juntos' },
-    { src: '/assets/foto5.jpg', title: 'Cumplicidade', subtitle: 'O nosso olhar diz tudo' },
-    { src: '/assets/foto6.png', title: 'Para Sempre', subtitle: 'Um novo capítulo' },
-    { src: '/assets/foto7.jpg', title: 'Meu Porto Seguro', subtitle: 'Em teus braços' },
+    { src: '/assets/foto1.jpg', title: '', subtitle: '' },
+    { src: '/assets/foto2.jpg', title: '', subtitle: '' },
+    { src: '/assets/foto3.jpg', title: '', subtitle: '' },
+    { src: '/assets/foto4.jpg', title: '', subtitle: '' },
+    { src: '/assets/foto5.jpg', title: '', subtitle: '' },
+    { src: '/assets/foto6.png', title: '', subtitle: '' },
+    { src: '/assets/foto7.jpg', title: '', subtitle: '' },
   ];
 
   return (

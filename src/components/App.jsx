@@ -20,9 +20,9 @@ function App() {
       <Header />
       {/* A tag <main> agora vai crescer para preencher o espaço restante */}
       <main>
-        <Texto />
         <Timer />
         <Carrossel />
+        <Texto />
       </main>
       <Footer />
       <Desenho />
