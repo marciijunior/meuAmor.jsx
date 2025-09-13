@@ -30,10 +30,8 @@
   width: 12vw;
 }
 
-/* ===== EFEITOS E OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
-  /* Esconde completamente os desenhos para uma interface mais limpa */
   .desenho-wrapper {
-    display: none;
+    opacity: 0.5;
   }
 }

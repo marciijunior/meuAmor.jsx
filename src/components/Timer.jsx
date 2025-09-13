@@ -43,7 +43,7 @@ function Timer() {
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.7 }}
     >
-      <h2>Desde que a nossa história começou:</h2>
+      <h2>Nosso tempo:</h2>
       <motion.div 
         className="timer-container"
         variants={containerVariants}

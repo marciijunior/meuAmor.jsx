@@ -11,7 +11,7 @@ function Texto() {
       transition={{ duration: 0.7 }}
     >
       <p>
-        "O tempo sempre foi o meu maior medo. Ele define quanto vivemos, o quanto sentimos, até quando podemos amar. Mas, para toda a ferida, há um alívio, e o meu alívio é você. Sou a pessoa mais grata do mundo ao seu lado, meu amor!"
+        O tempo sempre foi o meu maior medo. Ele define quanto vivemos, o quanto sentimos, até quando podemos amar. Mas, para toda a ferida, há um alívio, e o meu alívio é você. Sou a pessoa mais grata do mundo ao seu lado, meu amor!
       </p>
     </motion.section>
   );

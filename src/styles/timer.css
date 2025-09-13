@@ -17,7 +17,7 @@
 
 .timer-container {
   display: flex;
-  gap: 1rem; /* Espaçamento ligeiramente reduzido */
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -31,10 +31,9 @@
   text-align: center;
   border: 1px solid rgba(188, 138, 132, 0.2);
 
-  /* CORREÇÃO: Removemos min-width fixo e tornamos os cartões flexíveis */
-  flex: 1 1 100px; /* Podem crescer, podem encolher, base de 100px */
-  min-width: 90px;  /* Uma pequena salvaguarda para não ficarem demasiado finos */
-  max-width: 150px; /* Impede que fiquem demasiado grandes em ecrãs largos */
+  flex: 1 1 100px;
+  min-width: 90px; 
+  max-width: 150px; 
 }
 
 .timer-number {
@@ -51,7 +50,6 @@
   margin-top: 0.25rem;
 }
 
-/* OTIMIZAÇÃO PARA TELEMÓVEIS */
 @media (max-width: 768px) {
   .timer-wrapper h2 {
     font-size: 1.8rem;
@@ -61,12 +59,12 @@
     gap: 0.5rem;
   }
   .timer-box {
-    padding: 0.75rem;
-    flex-basis: 70px; /* Base ainda mais pequena para telemóveis */
+    padding: 0.6rem;
+    flex-basis: 70px;
     min-width: 70px;
   }
   .timer-number {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .timer-label {
     font-size: 0.6rem;

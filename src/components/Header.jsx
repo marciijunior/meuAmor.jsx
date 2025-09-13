@@ -1,9 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Importámos o motion...
+import { motion } from 'framer-motion';
 
 function Header() {
   return (
-    // ...e aqui usamo-lo, transformando <header> em <motion.header>
     <motion.header
       className="cabecalho"
       initial={{ opacity: 0, y: -50 }}

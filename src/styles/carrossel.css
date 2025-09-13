@@ -94,8 +94,6 @@
   background-color: var(--cor-branco);
 }
 
-
-/* ===== EFEITOS E OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
   .carrossel-wrapper-novo {
     padding: 0.5rem 0;
@@ -105,23 +103,21 @@
     margin-bottom: 1rem;
   }
   .meuSwiper-novo {
-    height: 350px; /* Carrossel mais baixo */
+    height: 350px;
     border-radius: 12px;
   }
   .slide-imagem {
-    width: 90%; /* Imagem ocupa quase todo o espaço */
+    width: 90%;
   }
   .slide-texto {
-    display: none; /* Esconde o texto para uma interface mais limpa */
+    display: none;
   }
   
-  /* Esconde as setas de navegação, usando apenas as bolinhas */
   .meuSwiper-novo .swiper-button-next,
   .meuSwiper-novo .swiper-button-prev {
     display: none;
   }
 
-  /* EFEITO DE TOQUE */
   .swiper-slide:active {
     transform: scale(0.97);
     transition: transform 0.2s ease-out;

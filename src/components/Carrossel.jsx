@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
 
-// Importa todos os estilos necessários para o Swiper
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -28,11 +27,11 @@ function Carrossel() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7 }}
     >
-      <h2 data-swiper-parallax="-300">As Nossas Memórias</h2>
+      <h2 data-swiper-parallax="-300">Nossas Memórias:</h2>
       <Swiper
         style={{
-          '--swiper-navigation-color': '#8c4a5f', // Cor dos botões de navegação
-          '--swiper-pagination-color': '#8c4a5f', // Cor da paginação
+          '--swiper-navigation-color': '#8c4a5f',
+          '--swiper-pagination-color': '#8c4a5f',
         }}
         speed={800}
         parallax={true}

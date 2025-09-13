@@ -1,27 +1,26 @@
 .cabecalho {
   width: 100%;
   padding: 1.5rem 2rem;
-  text-align: center; /* <<< GARANTE A CENTRALIZAÇÃO DO CONTEÚDO */
+  text-align: center;
   border-bottom: 1px solid rgba(188, 138, 132, 0.2);
-  box-sizing: border-box; /* Adicionado para consistência */
+  box-sizing: border-box;
 }
 
 .cabecalho h1 {
   font-family: var(--fonte-especial);
   font-size: clamp(2.5rem, 8vw, 3.5rem);
   color: var(--cor-destaque);
-  font-weight: 400;
+  font-weight: 00;
   margin: 0;
 }
 
 .cabecalho p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(1.2rem, 2vw, 1rem);
   color: var(--cor-subtexto);
   font-style: italic;
   margin-top: 0.5rem;
 }
 
-/* ===== OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
   .cabecalho {
     padding: 1rem;

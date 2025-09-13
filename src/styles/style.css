@@ -1,10 +1,6 @@
-/* ===== ARQUIVO PRINCIPAL DE ESTILOS UNIFICADOS ===== */
-
-/* 1. FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-/* 2. IMPORTAÇÃO DOS ESTILOS DOS COMPONENTES */
 @import url("reset.css");
 @import url("header.css");
 @import url("timer.css");
@@ -13,11 +9,10 @@
 @import url("footer.css");
 @import url("desenho.css");
 
-/* 3. PALETA DE CORES E FONTES */
 :root {
-  --cor-fundo: #f4eede;
+  --cor-fundo: #fff8f8;
   --cor-texto: #2d2424;
-  --cor-subtexto: #bc8a84;
+  --cor-subtexto: #0c0c0c;
   --cor-destaque: #8c4a5f;
   --cor-branco: #ffffff;
   --fonte-especial: 'Great Vibes', cursive;
@@ -25,7 +20,6 @@
   --fonte-botoes-ui: 'Montserrat', sans-serif;
 }
 
-/* 4. ESTILO GLOBAL */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -38,28 +32,25 @@ body {
   font-family: var(--fonte-corpo);
 }
 
-/* 5. ESTRUTURA PRINCIPAL COM CSS GRID */
 .site-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* Mantém o controlo geral da página */
+  overflow: hidden;
 }
 
-/* 6. ORGANIZADOR PRINCIPAL */
 main {
   overflow-y: auto;
-  overflow-x: hidden; /* Previne overflow apenas no container principal */
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center; /* <<< Essencial para centrar os contentores na horizontal */
+  align-items: center;
   padding: 2rem;
   gap: 2.5rem;
   box-sizing: border-box;
 }
 
-/* ===== OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
   main {
     padding: 1.5rem 1rem;

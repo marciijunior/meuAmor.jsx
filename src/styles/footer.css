@@ -1,9 +1,9 @@
 .rodape {
   width: 100%;
   padding: 1.5rem 2rem;
-  text-align: center; /* <<< GARANTE A CENTRALIZAÇÃO DO CONTEÚDO */
+  text-align: center;
   margin-top: auto;
-  box-sizing: border-box; /* Adicionado para consistência */
+  box-sizing: border-box;
 }
 
 .rodape p {
@@ -11,5 +11,5 @@
   font-family: var(--fonte-corpo);
   font-size: 1rem;
   letter-spacing: 0.5px;
-  margin: 0; /* Adicionado para remover margens padrão */
+  margin: 0;
 }

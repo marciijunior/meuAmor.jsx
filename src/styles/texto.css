@@ -11,37 +11,33 @@
   line-height: 1.7;
   color: var(--cor-texto);
   position: relative;
-  padding: 2rem; /* Aumentei um pouco o padding para dar mais espaço às aspas */
+  padding: 2rem;
 }
 
-/* Aspas decorativas */
 .texto-wrapper p::before,
 .texto-wrapper p::after {
   font-family: var(--fonte-especial);
-  font-size: 5rem; /* Um pouco maiores para mais impacto */
+  font-size: 5rem;
   color: var(--cor-destaque);
-  opacity: 0.25; /* Um pouco mais subtil */
+  opacity: 0.25;
   position: absolute;
-  line-height: 1; /* Garante que a altura da linha não interfira */
+  line-height: 1;
 }
 
-/* CORREÇÃO DE POSICIONAMENTO DA ASPA INICIAL */
 .texto-wrapper p::before {
   content: '“';
   top: 0;
   left: 0;
-  transform: translate(-20%, 0%); /* Ajuste fino para o canto superior esquerdo */
+  transform: translate(-20%, 0%);
 }
 
-/* CORREÇÃO DE POSICIONAMENTO DA ASPA FINAL */
 .texto-wrapper p::after {
   content: '”';
   bottom: 0;
   right: 0;
-  transform: translate(-60%, 60%); /* Ajuste fino para o canto inferior direito */
+  transform: translate(-60%, 60%);
 }
 
-/* ===== OTIMIZAÇÃO PARA TELEMÓVEIS ===== */
 @media (max-width: 768px) {
   .texto-wrapper p {
     padding: 1.5rem;
