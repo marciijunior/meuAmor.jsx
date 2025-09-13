@@ -1,21 +1,21 @@
 .carrossel-wrapper-novo {
   width: 100%;
-  max-width: 1000px; /* Um pouco mais largo para dar impacto */
-  padding: 2rem 0;
+  max-width: 900px;
+  padding: 1rem 0; /* Espaçamento vertical */
   text-align: center;
 }
 
 .carrossel-wrapper-novo h2 {
   font-family: var(--fonte-especial);
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
   color: var(--cor-destaque);
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Espaçamento inferior padronizado */
 }
 
 .meuSwiper-novo {
   width: 100%;
-  height: 500px;
+  height: 450px; /* Altura ajustada */
   background: #000;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(45, 36, 36, 0.15);

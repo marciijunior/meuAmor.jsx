@@ -2,18 +2,18 @@
 
 /* 1. FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 /* 2. IMPORTAÇÃO DOS ESTILOS DOS COMPONENTES */
 @import url("reset.css");
 @import url("header.css");
 @import url("timer.css");
 @import url("texto.css");
-/* A importação do corrente.css foi removida daqui */
 @import url("carrossel.css");
 @import url("footer.css");
 @import url("desenho.css");
 
-/* 3. PALETA DE CORES E FONTES (NOSSA IDENTIDADE VISUAL) */
+/* 3. PALETA DE CORES E FONTES */
 :root {
   --cor-fundo: #f4eede;
   --cor-texto: #2d2424;
@@ -22,29 +22,44 @@
   --cor-branco: #ffffff;
   --fonte-especial: 'Great Vibes', cursive;
   --fonte-corpo: 'Lora', serif;
-
-  /* Reset Básico */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  --fonte-botoes-ui: 'Montserrat', sans-serif;
 }
 
-/* 4. ESTILO GLOBAL */
+/* 4. ESTILO GLOBAL E FULL-SCREEN */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   font-family: var(--fonte-corpo);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-/* 5. ORGANIZADOR PRINCIPAL */
-main {
+.site-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* 5. ORGANIZADOR PRINCIPAL COM ESPAÇAMENTO PADRÃO */
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 4rem 2rem;
-  gap: 4rem;
+  padding: 2rem; /* Espaçamento interno principal */
+  gap: 2.5rem;   /* ESPAÇAMENTO PADRÃO ENTRE OS COMPONENTES PRINCIPAIS */
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.cabecalho, .rodape {
+  flex-shrink: 0;
 }

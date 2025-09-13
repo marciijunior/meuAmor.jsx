@@ -8,15 +8,15 @@
 
 .timer-wrapper h2 {
   font-family: var(--fonte-especial);
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
   color: var(--cor-destaque);
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Espaçamento inferior padronizado */
 }
 
 .timer-container {
   display: flex;
-  gap: clamp(0.5rem, 3vw, 1.5rem);
+  gap: 1.5rem; /* Espaçamento padronizado entre os cartões */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -27,20 +27,20 @@
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(45, 36, 36, 0.05);
   text-align: center;
-  min-width: 120px;
+  min-width: 110px;
   border: 1px solid rgba(188, 138, 132, 0.2);
 }
 
 .timer-number {
-  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  font-size: clamp(2.2rem, 7vw, 3rem);
   font-weight: 700;
   color: var(--cor-texto);
-  display: block;
 }
 
 .timer-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--cor-subtexto);
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 0.25rem;
 }

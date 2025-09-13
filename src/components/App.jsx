@@ -6,7 +6,6 @@ import Timer from './Timer.jsx';
 import Carrossel from './Carrossel.jsx';
 import Texto from './Texto.jsx';
 import Desenho from './Desenho.jsx';
-// O componente Corrente foi removido daqui
 import Footer from './Footer.jsx';
 
 // Importa os estilos do Swiper (Carrossel)
@@ -16,17 +15,18 @@ import 'swiper/css/pagination';
 
 function App() {
   return (
-    <>
+    // Esta é a nossa "tela" principal que vai ocupar 100% da altura
+    <div className="site-container">
       <Header />
+      {/* A tag <main> agora vai crescer para preencher o espaço restante */}
       <main>
         <Texto />
-        {/* A tag <Corrente /> foi removida daqui */}
         <Timer />
         <Carrossel />
       </main>
       <Footer />
       <Desenho />
-    </>
+    </div>
   );
 }
 
